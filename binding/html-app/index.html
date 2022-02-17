@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery.min.js"></script>
+    </head>
+    <body>
+        <button onclick="postMessage()">Click me!</button>
+    </body>
+    <script>
+        function postMessage() {
+            $.ajax(
+                {
+                    type: "POST",
+                    url: "http://localhost:3500/v1.0/bindings/target",
+                    contentType: "application/json",
+                    data: JSON.stringify({"data": "Hello, World!"})
+                }
+            )
+        }
+    </script>
+</html>

@@ -1,0 +1,7 @@
+[dependencies]
+actix-web = "2.0"
+actix-rt = "1.0.0"
+actix-service = "1.0.0"
+serde = "1.0"
+bytes = "0.5.2"
+json = "*"
